@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url(./images/1102001.jpg);
+    background-size: cover;
+    text-decoration: none;
+  }
+  
+  html {
+    font-family: "Assistant", sans-serif;
+  }
+  .nav-open .nav {
+    transform: translateX(0);
+  }
+  
+  .nav-open .open-nav {
+    transform: translateX(350px);
+  }
+  
+  .nav {
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #111111;
+    transform: translateX(-350px);
+    transition: transform 0.2s;
+    overflow: hidden;
+  }
+  
+  .nav-close {
+    background: none;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 15px 25px;
+    color: #dddddd;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  .nav-links-container {
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #dddddd;
+  }
+  
+  .nav-text {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover,
+  .nav-close:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .open-nav {
+    transition: transform 0.2s;
+  }
+  
+  .nav-links-container .sub-menu-1 {
+    display: none;
+  }
+  
+  .nav-bar:hover .sub-menu-1 {
+    display: block;
+    width: 350px;
+    top: 140px;
+    background-color: #111111;
+    z-index: 10;
+  }
+  
+  .nav-bar:hover .sub-menu-1 ul {
+    display: block;
+  }
+  
+  .nav-bar:hover .sub-menu-1 ul li {
+    width: 120px;
+    padding: 10px 0;
+    list-style-type: none;
+    position: relative;
+    left: -20px;
+  }
+  
+  .sub-menu-1 ul li:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .sub-menu-1 ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  .nav-links-container .nav-text #down-arrow {
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+  }
+  
+  .logo {
+    position: relative;
+    left: 40%;
+  }
+  
+  .btn-nav-open {
+      background: rgba(29, 29, 29);
+      border: none;
+      color: #fff;
+      font-size: xx-large;
+  }

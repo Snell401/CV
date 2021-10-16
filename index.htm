@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span class="navbar">
+      <nav class="nav">
+        <button type="button" class="nav-close">
+          <ion-icon name="close-outline" size="large"></ion-icon>
+        </button>
+        <div class="nav-links-container">
+          <li class="nav-bar">
+            <a href="#" class="nav-link">
+              <span class="nav-text">About Me <ion-icon id="down-arrow" name="chevron-down-outline" size="large"></ion-icon></span> 
+              
+              <ion-icon name="person-circle-outline" size="large"></ion-icon>
+            </a>
+            <div class="sub-menu-1">
+              <ul>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Education</a></li>
+              </ul>
+            </div>
+          </li>
+          <a href="#" class="nav-link">
+            <span class="nav-text dropdown">Services</span>
+            <ion-icon name="terminal-outline" size="large"></ion-icon>
+          </a>
+
+          <a href="#" class="nav-link">
+            <span class="nav-text">Training</span>
+            <ion-icon name="school-outline" size="large"></ion-icon>
+          </a>
+          <a href="#" class="nav-link">
+            <span class="nav-text">Contact</span>
+            <ion-icon name="call-outline" size="large"></ion-icon>
+          </a>
+        </div>
+      </nav>
+      <div class="open-nav">
+        <button class="btn-nav-open"><ion-icon name="arrow-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </span>
+
+    <Main>
+<div class="logo">
+    <img src="./images/Logo-grayScale.png" alt="">
+</div>
+
+    </Main>
+    <script>
+      function toggleNav() {
+        document.body.classList.toggle("nav-open");
+      }
+
+      document.querySelector(".btn-nav-open").addEventListener("click", () => {
+        toggleNav();
+      });
+
+      document.querySelector(".nav-close").addEventListener("click", () => {
+        toggleNav();
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
