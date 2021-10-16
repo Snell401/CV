@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+
     <title>Document</title>
   </head>
   <body>
@@ -44,16 +48,25 @@
         </div>
       </nav>
       <div class="open-nav">
-        <button class="btn-nav-open"><ion-icon name="arrow-forward-outline"></ion-icon>
+        <button class="btn-nav-open"> ||
+            <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
         </button>
       </div>
     </span>
 
     <Main>
 <div class="logo">
-    <img src="./images/Logo-grayScale.png" alt="">
+    <img src="./images/Logo-grayScale1.png" alt="">
 </div>
 
+<!-- thumbnail backgrounds -->
+<div class="container">
+    <div class="thumbnail1"><ion-icon name="restaurant"></ion-icon> <br> eat <span>() </span>; </div>
+    <div class="thumbnail2"><ion-icon name="bed"></ion-icon> <br> sleep <span>() </span> ; </div>
+    <div class="thumbnail3"><ion-icon name="code-slash"></ion-icon> <br> code <span>() </span>; </div>
+    <div class="thumbnail4"><ion-icon name="repeat"></ion-icon> <br> repeat <span>() </span>; </div>
+</div>
+<!-- End of thumbnail backgrounds -->
     </Main>
     <script>
       function toggleNav() {
@@ -72,9 +85,11 @@
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
+
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
   </body>
 </html>
