@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="education.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <title>D-Snell - Education</title>
+</head>
+<body>
+    
+
+    <span class="navbar">
+        <nav class="nav">
+          <button type="button" class="nav-close">
+            <ion-icon name="close-outline" size="large"></ion-icon>
+          </button>
+          <div class="nav-links-container">
+            <li class="nav-bar">
+                <a href="./index.htm" class="nav-link">
+                    <span class="nav-text">Home</span>
+                    <ion-icon name="Home" size="large"></ion-icon>
+                  </a>
+
+              <a href="#" class="nav-link">
+                <span class="nav-text">About Me <ion-icon id="down-arrow" name="chevron-down-outline" size="large"></ion-icon></span> 
+                
+                <ion-icon name="person-circle-outline" size="large"></ion-icon>
+              </a>
+              <div class="sub-menu-1">
+                <ul>
+                  <li><a href="#">Experience</a></li>
+                  <li><a href="https://github.com/Snell401" target="blank">Portfolio</a></li>
+                  <li><a href="#">Education</a></li>
+                </ul>
+              </div>
+            </li>
+            <a href="#" class="nav-link">
+              <span class="nav-text dropdown">Services</span>
+              <ion-icon name="terminal-outline" size="large"></ion-icon>
+            </a>
+  
+            <a href="#" class="nav-link">
+              <span class="nav-text">Training</span>
+              <ion-icon name="school-outline" size="large"></ion-icon>
+            </a>
+            <a href="#" class="nav-link">
+              <span class="nav-text">Contact</span>
+              <ion-icon name="call-outline" size="large"></ion-icon>
+            </a>
+          </div>
+       
+        </nav>
+        <div class="open-nav">
+          <button class="btn-nav-open"> ||
+              <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
+          </button>
+        </div>
+      </span>
+
+<main>
+
+  
+  
+    <div class="top-container">
+
+        <div class="education"> <h2>EDUCATION/EXPERIENCE</h2> </div>
+        <div class="download">
+       <a href="https://1drv.ms/b/s!AteJoGUeRrFRgbJMwzyQU1Kdi1XQjQ" class="download-button" target="blank">   <ion-icon name="cloud-download"></ion-icon></a>
+      <br> Download Resume </div>
+    </div>
+
+    <div class="uniform">
+      <img src="./images/uniform1.png" alt="">
+    </div>
+    
+
+    <div class="grid-container">
+
+      <div class="self">
+        <img src="./images/Snell-self.png" alt="">
+      </div>
+
+      <h2>Employment</h2>
+      <div class="grid">
+        
+        <div class="item-1"> <h3> HM Armed Forces - Royal Military Police | <strong>1997 to 2020</strong> </h3></div>
+        <div class="officer"><h4><li>Police Officer</li></h4></div>
+        <div class="item-2"> <h4><li> Instructor</li></h4></div>
+        <div class="item-3"> <h4><li>Special Investigations Branch </li> </h4></div>
+        <div class="item-4"> <h4><li> Senior Project Manager (Warrant Officer) </li></h4></div>
+                
+      </div>
+
+      <div class="rank">
+        <div class="rank-pic1"> <img src="./images/pte.png" alt="">Private</div>
+        <div class="rank-pic2"><img src="./images/lcpl.png" alt="">Lance Corporal</div>
+        <div class="rank-pic3"><img src="./images/cpl.png" alt="">Corporal</div>
+        <div class="rank-pic4"><img src="./images/sgt.png" alt="">Sergeant</div>
+        <div class="rank-pic5"><img src="./images/ssgt.png" alt="">Staff Sergeant</div>
+        <div class="rank-pic6"><img src="./images/wo2.png" alt="">Warrant Officer Class 2</div>
+      </div>
+
+      <h2>Education</h2>
+      <div class="grid-2">
+      
+        <div class="edu"> <h3>One Education</h3> <ul> SCRUM Master - PM</ul></div>
+        <div class="edu"> <h3>Institute of Supply Chain Management</h3> <ul> Foundation SCRUM Project Management </ul></div>
+        <div class="edu"> <h3>University of Sunderland</h3> <ul>  BA (Hons) Applied Investigations (2:1)</ul></div>
+        <div class="edu"> <h3>FutureQuals</h3> <ul> Award in Education and Training </ul></div>
+        <div class="edu"> <h3>Chartered Management Institute</h3> <ul> Diploma in Leadership and Management</ul></div>
+        <div class="edu"> <h3>Chartered Management Institute</h3> <ul> Certificate in Leadership and Management</ul></div>
+        <div class="edu"> <h3>Chartered Management Institute</h3> <ul> Diploma in first line management</ul></div>
+        <div class="edu"> <h3>Digital Career Institute</h3> <ul> Web Design</div>
+      </ul></div>
+    </div>
+
+</main>
+
+
+      <script>
+        function toggleNav() {
+          document.body.classList.toggle("nav-open");
+        }
+  
+        document.querySelector(".btn-nav-open").addEventListener("click", () => {
+          toggleNav();
+        });
+  
+        document.querySelector(".nav-close").addEventListener("click", () => {
+          toggleNav();
+        });
+  
+   
+      </script>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+  
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+</body>
+</html>
