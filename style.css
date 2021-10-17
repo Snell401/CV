@@ -128,6 +128,7 @@ html {
   position: absolute;
   top: 50%;
   transition: transform 0.5s;
+  cursor: pointer;
 }
 
 .nav-open {
@@ -157,10 +158,10 @@ html {
   color: rgba(208, 209, 211, 0.972);
 }
 
-.container ion-icon {
+/* .container ion-icon {
   font-size: 6rem;
   color: #292929;
-}
+} */
 
 .thumbnail1 {
   grid-area: "one";
@@ -233,4 +234,44 @@ html {
   img {
     max-width: 90vw;
   }
+}
+
+/* footer */
+
+
+footer {
+  color: #dddddd;
+  position: relative;
+  width: 15vw;
+}
+
+.footer-icon {
+position: absolute;
+left: 50%;
+transform: translate(-50%);
+justify-content: flex-start;
+
+}
+
+.footer-icon ion-icon {
+    font-size: 2rem;
+    margin: 1rem .5rem;
+    color: #dddddd;
+}
+
+.test   {
+    position: absolute;
+    top: 90%;
+    width: 100vw;
+}
+
+.icon-container2 {
+    position: relative;
+    left: 40%;
+    color: #292929;
+}
+
+.icon-container2 ion-icon {
+    font-size: 3rem;
+    margin: 0 1rem;
 }

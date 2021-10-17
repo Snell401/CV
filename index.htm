@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Document</title>
   </head>
@@ -20,14 +23,25 @@
         <div class="nav-links-container">
           <li class="nav-bar">
             <a href="#" class="nav-link">
-              <span class="nav-text">About Me <ion-icon id="down-arrow" name="chevron-down-outline" size="large"></ion-icon></span> 
-              
+              <span class="nav-text"
+                >About Me
+                <ion-icon
+                  id="down-arrow"
+                  name="chevron-down-outline"
+                  size="large"
+                ></ion-icon
+              ></span>
+
               <ion-icon name="person-circle-outline" size="large"></ion-icon>
             </a>
             <div class="sub-menu-1">
               <ul>
                 <li><a href="#">Experience</a></li>
-                <li><a href="https://github.com/Snell401" target="blank">Portfolio</a></li>
+                <li>
+                  <a href="https://github.com/Snell401" target="blank"
+                    >Portfolio</a
+                  >
+                </li>
                 <li><a href="./education.html">Education</a></li>
               </ul>
             </div>
@@ -46,28 +60,58 @@
             <ion-icon name="call-outline" size="large"></ion-icon>
           </a>
         </div>
+        <footer class="footer-icon">
+          <div class="icon-container">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-xing"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
+          </div>
+        </footer>
       </nav>
       <div class="open-nav">
-        <button class="btn-nav-open"> ||
-            <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
+        <button class="btn-nav-open">
+          ||
+          <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
         </button>
       </div>
     </span>
 
-    <Main>
-<div class="logo">
-    <img src="./images/Logo-grayScale1.png" alt="">
-</div>
+    <main>
+      <div class="logo">
+        <img src="./images/Logo-grayScale1.png" alt="" />
+      </div>
 
-<!-- thumbnail backgrounds -->
-<div class="container">
-    <div class="thumbnail1"><ion-icon name="restaurant"></ion-icon> <br> eat <span>() </span>; </div>
-    <div class="thumbnail2"><ion-icon name="bed"></ion-icon> <br> sleep <span>() </span> ; </div>
-    <div class="thumbnail3"><ion-icon name="code-slash"></ion-icon> <br> code <span>() </span>; </div>
-    <div class="thumbnail4"><ion-icon name="repeat"></ion-icon> <br> repeat <span>() </span>; </div>
-</div>
-<!-- End of thumbnail backgrounds -->
-    </Main>
+      <!-- thumbnail backgrounds -->
+      <div class="container">
+        <div class="thumbnail1">
+          <ion-icon name="restaurant"></ion-icon> <br />
+          eat <span>() </span>;
+        </div>
+        <div class="thumbnail2">
+          <ion-icon name="bed"></ion-icon> <br />
+          sleep <span>() </span> ;
+        </div>
+        <div class="thumbnail3">
+          <ion-icon name="code-slash"></ion-icon> <br />
+          code <span>() </span>;
+        </div>
+        <div class="thumbnail4">
+          <ion-icon name="repeat"></ion-icon> <br />
+          repeat <span>() </span>;
+        </div>
+      </div>
+      <!-- End of thumbnail backgrounds -->
+      <div class="test">
+        <div class="icon-container2">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+          <ion-icon name="logo-xing"></ion-icon>
+          <ion-icon name="logo-github"></ion-icon>
+        </div>
+      </div>
+    </main>
+
     <script>
       function toggleNav() {
         document.body.classList.toggle("nav-open");
@@ -80,8 +124,6 @@
       document.querySelector(".nav-close").addEventListener("click", () => {
         toggleNav();
       });
-
- 
     </script>
     <script
       type="module"
@@ -92,6 +134,5 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-
   </body>
 </html>

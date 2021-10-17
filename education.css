@@ -138,12 +138,15 @@ html {
   position: absolute;
   top: 50%;
   transition: transform 0.5s;
+  cursor: pointer;
+  z-index: 11;
 }
 
 .nav-open {
   position: absolute;
   top: 50%;
   transition: transform 0.5s;
+  z-index: 10;
 }
 
 /* main css */
@@ -279,7 +282,7 @@ a:active {
   justify-content: center;
   text-align: center;
   grid-template-columns: repeat(6, 1fr);
-  margin-left: -5rem;
+  margin-left: 5rem;
   opacity: 0.5;
   transform: scale(0.7);
 }
@@ -302,6 +305,7 @@ a:active {
   height: 0px;
   opacity: 0.3;
   position: absolute;
+  z-index: 0;
   left: 50%;
   top: 20%;
 }
@@ -333,4 +337,4 @@ a:active {
         transform: scale(.7);
         transition: .5s;
     }
-}
+} 
