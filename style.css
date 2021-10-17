@@ -4,10 +4,7 @@ body {
     height: 100vh;
     overflow-x: hidden;
     background: rgba(0, 0, 0, 0.938);
-    /* background-image: url(./images/1102001.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
-    text-decoration: none;
+     text-decoration: none;
     overflow: hidden;
   }
   
@@ -93,7 +90,7 @@ body {
   }
   
   .nav-bar:hover .sub-menu-1 ul li {
-    width: 120px;
+    width: 200px;
     padding: 10px 0;
     list-style-type: none;
     position: relative;
