@@ -229,7 +229,7 @@ a:active {
 
 .self {
   position: absolute;
-  left: -2%;
+ 
 }
 
 /* employment and education */
@@ -319,12 +319,18 @@ a:active {
   }
   .top-container {
     position: relative;
-    justify-content: flex-start;
+    justify-content: left;
     top: 10%;
   }
+.self {
+    display: none;
+}
+ 
+}
 
-  .self {
-    display: list-item;
-    top: 10%;
-  }
+@media screen and (max-width: 1200px) {
+    .self {
+        transform: scale(.7);
+        transition: .5s;
+    }
 }
