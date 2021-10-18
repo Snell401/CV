@@ -232,6 +232,7 @@ a:active {
 
 .self {
   position: absolute;
+  top: 53%;
  
 }
 
@@ -279,10 +280,9 @@ a:active {
 .rank {
   display: grid;
   width: 50vw;
-  justify-content: center;
   text-align: center;
   grid-template-columns: repeat(6, 1fr);
-  margin-left: 5rem;
+  margin-left: -10rem;
   opacity: 0.5;
   transform: scale(0.7);
 }
@@ -291,7 +291,7 @@ a:active {
   margin: 1em 0 0 0;
   font-size: 2rem;
 }
-.grid-container > h2:nth-child(5) {
+.grid-container > h2:nth-child(7) {
    margin-left: 9rem;
 
 }
@@ -306,8 +306,8 @@ a:active {
   opacity: 0.3;
   position: absolute;
   z-index: 0;
-  left: 50%;
-  top: 20%;
+  left: 40%;
+  top: 10%;
 }
 
 .uniform img {
@@ -338,3 +338,22 @@ a:active {
         transition: .5s;
     }
 } 
+
+footer {
+    position: relative;
+    width: 15vw;
+  }
+  
+  .footer-icon {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  justify-content: flex-start;
+  
+  }
+  
+  .footer-icon ion-icon {
+      font-size: 2rem;
+      margin: 1rem .5rem;
+      color: #dddddd81;
+  }

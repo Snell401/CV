@@ -256,10 +256,10 @@ justify-content: flex-start;
 .footer-icon ion-icon {
     font-size: 2rem;
     margin: 1rem .5rem;
-    color: #dddddd;
+    color: #dddddd81;
 }
 
-.test   {
+/* .test   {
     position: absolute;
     top: 90%;
     width: 100vw;
@@ -274,4 +274,4 @@ justify-content: flex-start;
 .icon-container2 ion-icon {
     font-size: 3rem;
     margin: 0 1rem;
-}
+} */
