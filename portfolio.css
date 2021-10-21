@@ -1,0 +1,342 @@
+/* ====== html and Body ====*/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-size: 150%;
+  font-family: "Darker Grotesque", sans-serif;
+  background: #8e99a2b7;
+}
+
+/* ========= links ======= */
+a {
+  color: #dddddd;
+}
+
+/* ==== Navbar layout ========== */
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 200;
+  position: fixed;
+  overflow-x: hidden;
+}
+
+label {
+  cursor: pointer;
+  display: block;
+  height: 6rem;
+  width: 4rem;
+  position: relative;
+  z-index: 10;
+}
+
+label span {
+  border-radius: 15%;
+  height: 3px;
+  width: 32px;
+  background-color: #cfcdcd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+label span:before {
+  border-radius: 15%;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #cfcdcd;
+  top: 400%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+label span:after {
+  border-radius: 15%;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #cfcdcd;
+  top: -400%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+label:hover span {
+  height: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+label:hover span:before {
+  height: 3px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+label:hover span:after {
+  height: 3px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+nav {
+  max-width: 200px;
+  background-color: transparent;
+  -webkit-transform: translateX(-100%) scale(1, 0.1);
+  transform: translateX(-100%) scale(1, 0.1);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 10;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+nav ul li a {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  line-height: 1rem;
+  text-decoration: none;
+  color: #d1d6dd;
+  display: block;
+  padding: 1rem;
+  font-size: xx-large;
+}
+
+nav ul li:hover a {
+  color: #d3c8c8;
+  background-color: #292929;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+nav ul li:hover a i {
+  color: #110f0f;
+}
+
+.navBtn:checked ~ nav {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navBtn:checked ~ nav ul li {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+.navBtn {
+  display: none;
+}
+
+.sub-menu-1 {
+  display: none;
+}
+
+.nav-bar:nth-child(2) {
+  position: relative;
+}
+
+.nav-bar:hover .sub-menu-1 {
+  display: block;
+  width: 300px;
+  position: absolute;
+  top: -10px;
+  left: 190px;
+  z-index: 100;
+}
+
+.nav-bar:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+  z-index: 100;
+  background: rgb(205, 205, 214);
+}
+
+.nav-bar:hover .sub-menu-1 ul li {
+  width: 100%;
+  /* padding: 10px 0; */
+}
+
+.nav-bar:hover .sub-menu-1 ul li a {
+  background-color: rgba(240, 239, 239, 0.63);
+}
+
+.sub-menu-1 ul li:hover > a {
+  color: rgb(212, 0, 0);
+  text-transform: uppercase;
+}
+
+.fas {
+  margin-right: 10px;
+}
+
+/* =========== MAIN ============= */
+
+/* =========== Hero =============== */
+
+main {
+    position:  absolute;
+    width: 100vw;
+    top: 0;
+  
+}
+
+.hero   {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:#000 url(./images/stars.png) repeat top center;
+    
+}
+
+.hero img {
+    width: 20%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+}
+h1, h2{
+    font-style: italic;
+    color: #cfcdcd;
+    text-align: center;
+    color: rgba(255,255,255,.3);
+text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+
+.accordion-button {
+    color: #f5f6f7;
+    background: #8e99a2b7;
+    font: 600;
+    font-size: 1em;
+}
+
+.collapse img {
+    margin: 10px;
+}
+
+.alert {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0;
+    background: #8E99A2;
+    color: #f5f6f7;
+    padding: 0;
+    
+}
+
+.collapse {
+    width: 98%;
+       
+}
+
+/* =========== star wars =========== */
+.fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+  }
+ 
+  body {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+  }
+  
+  .fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+  }
+  
+  .star-wars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    text-align: justify;
+  }
+  
+  .crawl {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+  }
+  
+  .crawl > .title {
+    font-size: 90%;
+    text-align: center;
+  }
+  
+  .crawl > .title h1 {
+    margin: 0 0 100px;
+    text-transform: uppercase;
+  }
+  
+  @keyframes crawl {
+    0% {
+      top: 0;
+      transform: rotateX(20deg)  translateZ(0);
+    }
+    100% { 
+      top: -6000px;
+      transform: rotateX(25deg) translateZ(-2500px);
+    }
+  }

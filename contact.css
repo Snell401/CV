@@ -1,177 +1,50 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    width: 100vw;
-    background: rgba(231, 230, 230, 0.938);
-    text-decoration: none;
-    overflow-x: hidden;
-  }
-  
-  html {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
-  }
-  .nav-open .nav {
-    transform: translateX(0);
-  }
-  
-  .nav-open .open-nav {
-    transform: translateX(350px);
-  }
-  
-  .nav {
-    width: 350px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #111111;
-    transform: translateX(-350px);
-    transition: transform 0.2s;
-    overflow: hidden;
-    color: aliceblue;
-    z-index: 1000;
-  }
-  
-  .nav-close {
-    background: none;
-    display: flex;
-    align-items: center;
-    border: none;
-    padding: 15px 25px;
-    color: #dddddd;
-    margin-left: auto;
-    cursor: pointer;
-  }
-  
-  .nav-links-container {
-    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15);
-  }
-  
-  .nav-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 25px;
-    text-decoration: none;
-    color: #dddddd;
-  }
-  
-  .nav-text {
-    font-size: 22px;
-    font-weight: 500;
-  }
-  
-  .sub-menu-1 a {
-    margin-left: 30px;
-  }
-  
-  .nav-link:hover,
-  .nav-close:hover {
-    background: rgba(255, 255, 255, 0.05);
-  }
-  
-  .open-nav {
-    transition: transform 0.2s;
-  }
-  
-  .nav-links-container .sub-menu-1 {
-    display: none;
-  }
-  
-  .nav-bar:hover .sub-menu-1 {
-    display: block;
-    width: 350px;
-    top: 140px;
-    background-color: #111111;
-    z-index: 10;
-  }
-  
-  .nav-bar:hover .sub-menu-1 ul {
-    display: block;
-  }
-  
-  .nav-bar:hover .sub-menu-1 ul li {
-    width: 200px;
-    padding: 10px 0;
-    list-style-type: none;
-    position: relative;
-    left: -20px;
-  }
-  
-  .sub-menu-1 ul li:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-  .sub-menu-1 ul a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2rem;
-  }
-  
-  .nav-links-container .nav-text #down-arrow {
-    margin-left: 10px;
-    position: relative;
-    top: 10px;
-  }
-  
-  .logo {
-    position: sticky;
-    overflow-y: hidden;
-    text-align: center;
-    left: 40%;
-  }
-  
-  .btn-nav-open {
-    background: rgb(29, 29, 29);
-    padding: 5px 5px 10px 0;
-    border-radius: 0 10px 10px 0;
-    border: none;
-    box-shadow: 5px 5px 15px 0px rgba(20, 19, 19, 0.801);
-    color: #fff;
-    font-size: 3rem;
-    position: absolute;
-    top: 50%;
-    transition: transform 0.5s;
-    cursor: pointer;
-    z-index: 11;
-  }
-  
-  .nav-open {
-    position: absolute;
-    top: 50%;
-    transition: transform 0.5s;
-    z-index: 10;
-  }
-  
-  /* main css */
-  
-  main {
-    width: 100vw;
-    height: inherit;
-  }
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
 
+@keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
 
-footer {
-    position: relative;
-    width: 15vw;
-  }
-  
-  .footer-icon {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  justify-content: flex-start;
-  
-  }
-  
-  .footer-icon ion-icon {
-      font-size: 2rem;
-      margin: 1rem .5rem;
-      color: #dddddd81;
-  }
+.stars, .twinkling, .clouds {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+width:100%;
+height:100%;
+display:block;
+}
+.stars {
+background:#000 url(./images/stars.png) repeat top center;
+z-index:0;
+}
+.twinkling{
+background:transparent url(./images/twinkling.png) repeat top center;
+z-index:1;
+-moz-animation:move-twink-back 200s linear infinite;
+-ms-animation:move-twink-back 200s linear infinite;
+-o-animation:move-twink-back 200s linear infinite;
+-webkit-animation:move-twink-back 200s linear infinite;
+animation:move-twink-back 200s linear infinite;
+}
+.clouds{
+  background:transparent url(./images/clouds.png) repeat top center;
+  z-index:3;
+-moz-animation:move-clouds-back 200s linear infinite;
+-ms-animation:move-clouds-back 200s linear infinite;
+-o-animation:move-clouds-back 200s linear infinite;
+-webkit-animation:move-clouds-back 200s linear infinite;
+animation:move-clouds-back 200s linear infinite;
+}

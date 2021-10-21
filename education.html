@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="education.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
@@ -13,145 +19,177 @@
 <body>
     
 
-    <span class="navbar">
-        <nav class="nav">
-          <button type="button" class="nav-close">
-            <ion-icon name="close-outline" size="large"></ion-icon>
-          </button>
-          <div class="nav-links-container">
-            <li class="nav-bar">
-                <a href="./index.htm" class="nav-link">
-                    <span class="nav-text">Home</span>
-                    <ion-icon name="Home" size="large"></ion-icon>
-                  </a>
+    <!-- ============ Nav ===================== -->
 
-              <a href="#" class="nav-link">
-                <span class="nav-text">About Me <ion-icon id="down-arrow" name="chevron-down-outline" size="large"></ion-icon></span> 
-                
-                <ion-icon name="person-circle-outline" size="large"></ion-icon>
-              </a>
-              <div class="sub-menu-1">
-                <ul>
-                  <li><a href="#">Experience</a></li>
-                  <li><a href="https://github.com/Snell401" target="blank">Portfolio</a></li>
-                  <li><a href="#">Education</a></li>
-                </ul>
-              </div>
-            </li>
-            <a href="#" class="nav-link">
-              <span class="nav-text dropdown">Services</span>
-              <ion-icon name="terminal-outline" size="large"></ion-icon>
-            </a>
-  
-            <a href="#" class="nav-link">
-              <span class="nav-text">Training</span>
-              <ion-icon name="school-outline" size="large"></ion-icon>
-            </a>
-            <a href="./contact.html" class="nav-link">
-              <span class="nav-text">Contact</span>
-              <ion-icon name="call-outline" size="large"></ion-icon>
-            </a>
-          </div>
-          <footer class="footer-icon">
-            <div class="icon-container">
-             <a href="https://www.facebook.com/darren.snell.12" target="blank"> <ion-icon name="logo-facebook"></ion-icon></a>
-              <a href="https://www.linkedin.com/in/darren-snell/" target="blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-              <a href="https://www.xing.com/profile/Darren_Snell2/cv" target="blank"><ion-icon name="logo-xing"></ion-icon></a>
-              <a href="https://github.com/Snell401" target="balnk"><ion-icon name="logo-github"></ion-icon></a>
-            </div>
-          </footer>
-        </nav>
-        <div class="open-nav">
-          <button class="btn-nav-open"> ||
-              <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
-          </button>
-        </div>
-      </span>
+    <label class="floatLeft" for="navBtn"><span></span></label>
+     
+    <div class="container">
+    <input type="checkbox" class="navBtn" id="navBtn" />
+    <nav>
+      <ul>
+        <!-- <li class="nav-bar">
+          <a href="#"><i class="fa fa-heart"></i>Home</a>
+        </li> -->
+        <li class="nav-bar">
+          <a href="./index.html"><i class="fas fa-house-user"></i>Home</a>
+          <div class="sub-menu-1">
+         
+              <li><a href="./portfolio.html"><i class="fas fa-user-alt"></i>Portfolio</a></li>
+           
+        </li>
+        <li class="nav-bar">
+          <a href="#"><i class="fas fa-user-tie"></i>Services</a>
+        </li>
+        
+        <li class="nav-bar">
+          <a href="./contact.html"><i class="fas fa-address-book"></i>Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
-<main>
 
-  
-  
+ 
+
     <div class="top-container">
 
-        <div class="education"> <h2>EDUCATION/EXPERIENCE</h2> </div>
-        <div class="download">
-       <a href="https://1drv.ms/b/s!AteJoGUeRrFRgbJMwzyQU1Kdi1XQjQ" class="download-button" target="blank">   <ion-icon name="cloud-download"></ion-icon></a>
-      <br> Download Resume </div>
-    </div>
+      <div class="education"> <h2>About Darren</h2> </div>
+      <div class="download">
+     <a href="https://1drv.ms/b/s!AteJoGUeRrFRgbJMwzyQU1Kdi1XQjQ" class="download-button" target="blank"> <i class="fas fa-download"></i></a> <br> Download Resume </div>
+  </div>
 
-    <div class="uniform">
-      <img src="./images/uniform1.png" alt="">
-    </div>
-    
 
-    <div class="grid-container">
+<main class="main1">
 
-      <div class="self">
-        <img src="./images/Snell-self.png" alt="">
-      </div>
 
-      <h2>Employment</h2>
-      <div class="grid">
-        
-        <div class="item-1"> <h3> HM Armed Forces - Royal Military Police | <strong>1997 to 2020</strong> </h3></div>
-        <div class="officer"><h4><li>Police Officer</li></h4></div>
-        <div class="item-2"> <h4><li> Instructor</li></h4></div>
-        <div class="item-3"> <h4><li>Special Investigations Branch </li> </h4></div>
-        <div class="item-4"> <h4><li> Senior Project Manager (Warrant Officer) </li></h4></div>
-                
-      </div>
-
-      <div class="rank">
-        <div class="rank-pic1"> <img src="./images/pte.png" alt="">Private</div>
-        <div class="rank-pic2"><img src="./images/lcpl.png" alt="">Lance Corporal</div>
-        <div class="rank-pic3"><img src="./images/cpl.png" alt="">Corporal</div>
-        <div class="rank-pic4"><img src="./images/sgt.png" alt="">Sergeant</div>
-        <div class="rank-pic5"><img src="./images/ssgt.png" alt="">Staff Sergeant</div>
-        <div class="rank-pic6"><img src="./images/wo2.png" alt="">Warrant Officer Class 2</div>
-      </div>
 <hr>
-<br>
-      <h2>Education</h2>
-      <div class="grid-2">
-      
-        <div class="edu"> <h3>One Education</h3> <ul> SCRUM Master - PM</ul></div>
-        <div class="edu"> <h3>Institute of Supply Chain Management</h3> <ul> Foundation SCRUM Project Management </ul></div>
-        <div class="edu"> <h3>University of Sunderland</h3> <ul>  BA (Hons) Applied Investigations (2:1)</ul></div>
-        <div class="edu"> <h3>FutureQuals</h3> <ul> Award in Education and Training </ul></div>
-        <div class="edu"> <h3>Chartered Management Institute</h3> <ul> Diploma in Leadership and Management</ul></div>
-        <div class="edu"> <h3>Chartered Management Institute</h3> <ul> Certificate in Leadership and Management</ul></div>
-        <div class="edu"> <h3>Chartered Management Institute</h3> <ul> Diploma in first line management</ul></div>
-        <div class="edu"> <h3>Digital Career Institute</h3> <ul> Web Design</div>
-      </ul></div>
+
+  <article class="employment">
+  <div class="grid-container">
+
+    <img src="./images/poster-self.png" alt="" width="170px" class="self">
+    
+    <div class="edu-title"><h1>Education</h1></div>
+    <div class="edu1"> <h3>University of Sunderland</h3> BA(Hons) 2:1 Applied Investigations </div>
+    <div class="edu2"><h3>Digital Career Institute</h3>Web Design </div>
+    <div class="edu3"><h3>Scrum Master</h3></div>
+    <div class="edu4"><h3>Foundation of Project Management</h3></div>
+    <div class="edu5"><h3>Award in Education and Teaching</h3></div>
+    <div class="edu6"><h3>Diploma - Leadership and Management</h3></div>
+    <div class="edu7"><h3>Certificate - Leadership and Management</h3></div>
+    <div class="edu8"><h3>Diploma - First line  management</h3></div>
+
+    <div class="title"><h1>Employment</h1></div>
+
+    <div class="history">
+      <ul>
+        <h2>HM Armed Forces - Royal Military Police | 1997 - 2020</h2>
+        <li>Police Officer</li>
+        <li>Instructor</li>
+        <li>Special Investigations Branch</li>
+        <li>Senior Project Manager (Warrant Officer)</li>
+      </ul>
+
     </div>
 
+
+  
+      <div class="rank rank1"><img src="./images/pte.png" alt=""> <br> Private</div>
+      <div class="rank rank2"><img src="./images/lcpl.png" alt=""> <br> Lance Corporal</div>
+      <div class="rank rank3"><img src="./images/cpl.png" alt=""> <br> Corporal</div>
+      <div class="rank rank4"><img src="./images/sgt.png" alt=""> <br> Sergeant</div>
+      <div class="rank rank5"><img src="./images/ssgt.png" alt=""> <br> Staff Sergeant</div>
+      <div class="rank rank6"><img src="./images/wo2.png" alt=""> <br> Warrant Office Class 2</div>
+      
+   
+  </div>
+
+  
+</article>
+<div class="bio">
+  <p>Darren spent 23 yeras in the British Army serving as a Royal Military Police Officer and rose to the rank of Warrant Officer Class 2.  He deployed on mutlitple operational and humanitarian tours.....................</p>
+</div>
 </main>
 
+<br>
+<main class="main2">
+<div class="mission-vision"><h1>My Mission - My Vision</div>
+<article class="mission">
+  <br>
+   <div class="mission-container">
+ 
+ <div class="mission-para"><h1><i class="fas fa-bullseye"></i>Mission Statement</h1>Here at D Snell Designs we strive to provide our clients with the utmost satisfaction. By doing so, we treat every client's website with care. We strive for a modern website layout and high organic search engine rankings. Our mission is to ensure the best relationship with our clients, both during and after their goals have been met. We keep this in mind in whatever we do.</div>
+ 
+ 
+ 
+ <div class="mission-para2"><h1><i class="far fa-eye"></i>Vision</h1>To become a prime performer, in providing quality Web and Software solutions in the competitive global market place</div>
+ 
+ 
+ 
+ <div class="mission-para3"><h1><i class="fas fa-thumbs-up"></i>Commitment</h1>We take pride in our on time delivery and ability to meet quick turn around requests while exceeding customer quality demands. <br>
+   Customer Satisfaction continues to be of utmost importance to DSD, as do Consistent quality, Constant innovation, Technology enhancement, Process improvement and Customer orientation. We have developed our core competence and aligning objectives at all levels so as to realize synergy in operations. </div>
+ </div>
+ </article>
+ <br>
+</main>
+<hr>
+<article class="contact-container">
+<a id="contact_page"></a>
+<div class="contact-grid">
 
-      <script>
-        function toggleNav() {
-          document.body.classList.toggle("nav-open");
-        }
-  
-        document.querySelector(".btn-nav-open").addEventListener("click", () => {
-          toggleNav();
-        });
-  
-        document.querySelector(".nav-close").addEventListener("click", () => {
-          toggleNav();
-        });
-  
-   
-      </script>
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-      ></script>
-  
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-      ></script>
+<div class="contact"></a>
+  <ul>
+    <li><a href="https://www.google.com/maps/place/37671+H%C3%B6xter/@51.7682453,9.2153904,11z/data=!3m1!4b1!4m5!3m4!1s0x47bae4fad5da7ed1:0x427f28131548490!8m2!3d51.7774678!4d9.3771214" target="blank"><i class="fas fa-map-marker-alt"></i>Some Place 1, quaint Village, NRW, 33093, Germany </a></li>
+    <li><a href="tel:+4919298978979"><i class="fas fa-phone-alt"></i>01929 8978979</a></li>
+    <li><a href="sms:+14035550185?body=I'm%20interested%20in%20your%20web%20design"><i class="fas fa-sms"></i>SMS - 01929 90278231</a></li>
+    <li> <a href="https://wa.me/15551234567?text=I'm%20interested%20in%20your%20web%20design" target="blank"><i class="fab fa-whatsapp"></i>WhatsApp - 01929 90278231</a></li>
+    <li><a href="mailto:info@snelldesigns.tech" target="blank"><i class="fas fa-envelope-open-text"></i>inof@snelldesigns.tech</a></li>
+  </ul>
+</div>
+
+<form action="action_page.php" class="newsletter-container">
+  <div class="newsletter">
+  <h2>Subsrcibe to our Newsletter</h2>
+  <p>Enter your email address to keep in touch</p>
+  </div>
+
+  <div class="email-placeholder">
+    <input class="email-enter" type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> 
+    </label>
+    <p> I agree to my submitted data being stored and used to receive newsletters</p>
+  </div>
+
+  <div class="newsletter">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+    
+<div class="connect">
+  <ul class="social">
+
+<li class="linked"> <a href="https://www.linkedin.com/in/darren-snell/" target="blank"><i class="fab fa-linkedin"></i> <br> Linked</li></a> 
+<li class="git"> <a href="https://github.com/Snell401" target="blank"> <i class="fab fa-github-square"></i> <br>Github</li></a>
+<li class="codepen"> <a href="https://codepen.io/Snell401" target="blank"> <i class="fab fa-codepen"></i> <br>CodePen</li></a>
+<li class="xing"> <a href="https://www.xing.com/profile/Darren_Snell2/cv" target="blank"><i class="fab fa-xing-square"></i> <br>Xing</li></a> 
+</ul>
+<hr>
+We look forward to connecting with you!
+
+
+</div>
+
+</div>
+
+</article>
+
+<button id="myBtn"><a href="#top"><i class="fas fa-caret-square-up"></i></i></a></button>
+
+
+<footer>
+<div class="footer-text"> Copyright &copy; Web Design by DSD.  All Rights Reserved.  </div>
+<div class="trademarks">All other trademarks and logos are used for identification purposes only and are the rights of their exclusive owners.</div>
+</footer>
 </body>
 </html>

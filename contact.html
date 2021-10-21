@@ -4,105 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap"
       rel="stylesheet"
     />
-
-    <title>Document</title>
+    <title>About Me, Information</title>
   </head>
   <body>
-    <span class="navbar">
-        <nav class="nav">
-          <button type="button" class="nav-close">
-            <ion-icon name="close-outline" size="large"></ion-icon>
-          </button>
-          <div class="nav-links-container">
-            <li class="nav-bar">
-                <a href="./index.htm" class="nav-link">
-                    <span class="nav-text">Home</span>
-                    <ion-icon name="Home" size="large"></ion-icon>
-                  </a>
 
-              <a href="#" class="nav-link">
-                <span class="nav-text">About Me <ion-icon id="down-arrow" name="chevron-down-outline" size="large"></ion-icon></span> 
-                
-                <ion-icon name="person-circle-outline" size="large"></ion-icon>
-              </a>
-              <div class="sub-menu-1">
-                <ul>
-                  <li><a href="#">Experience</a></li>
-                  <li><a href="https://github.com/Snell401" target="blank">Portfolio</a></li>
-                  <li><a href="./education.html">Education</a></li>
-                </ul>
-              </div>
-            </li>
-            <a href="#" class="nav-link">
-              <span class="nav-text dropdown">Services</span>
-              <ion-icon name="terminal-outline" size="large"></ion-icon>
-            </a>
-  
-            <a href="#" class="nav-link">
-              <span class="nav-text">Training</span>
-              <ion-icon name="school-outline" size="large"></ion-icon>
-            </a>
-            <a href="#" class="nav-link">
-              <span class="nav-text">Contact</span>
-              <ion-icon name="call-outline" size="large"></ion-icon>
-            </a>
+    <!-- ============ Nav ===================== -->
+
+    <label class="floatLeft" for="navBtn"><span></span></label>
+     
+    <div class="container">
+    <input type="checkbox" class="navBtn" id="navBtn" />
+    <nav>
+      <ul>
+        <!-- <li class="nav-bar">
+          <a href="#"><i class="fa fa-heart"></i>Home</a>
+        </li> -->
+        <li><a href="./index.html"><i class="fas fa-house-user"></i>Home</a></li>
+        <li class="nav-bar">
+          <a href="#"><i class="fas fa-user-alt"></i>About Me</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="./education.html">Experience</a></li>
+              <li><a href="#">Portfolio</a></li>
+            
+            </ul>
           </div>
-          <footer class="footer-icon">
-            <div class="icon-container">
-             <a href="https://www.facebook.com/darren.snell.12" target="blank"> <ion-icon name="logo-facebook"></ion-icon></a>
-              <a href="https://www.linkedin.com/in/darren-snell/" target="blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-              <a href="https://www.xing.com/profile/Darren_Snell2/cv" target="blank"><ion-icon name="logo-xing"></ion-icon></a>
-              <a href="https://github.com/Snell401" target="balnk"><ion-icon name="logo-github"></ion-icon></a>
-            </div>
-          </footer>
-        </nav>
-        <div class="open-nav">
-          <button class="btn-nav-open"> ||
-              <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
-          </button>
+        </li>
+        <li class="nav-bar">
+          <a href="#"><i class="fas fa-user-tie"></i>Services</a>
+        </li>
+       
+       
+      </ul>
+    </nav>
+  </div>
+    <!-- ========= bg stars ================ -->
+    <div class="background-container">
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+      <div class="clouds"></div>
+  
+    </div>
+
+
+    <main>
+      <div class="logo-Snell">
+        <img src="./images/Logo-grayScale1.png" alt="" />
+      </div>
+
+      <!-- <li><i class="fas fa-map-marker-alt"></i>Some Place 1, quaint Village, NRW, 33093, Germany </li>
+      <li><i class="fas fa-phone-alt"></i>01929 8978979</li>
+      <li><i class="fas fa-sms"></i>SMS - 01929 90278231</li>
+      <li><i class="fab fa-whatsapp"></i>WhatsApp - 01929 90278231</li>
+      <li><i class="fas fa-envelope-open-text"></i>inof@snelldesigns.tech</li> -->
+      <!-- thumbnail backgrounds -->
+<br>
+<h1 style="color: azure;">Contact Us</h1>
+      
+      <div class="container_2">
+        
+        <div class="contact_1"> <a href="https://www.google.com/maps/place/37671+H%C3%B6xter/@51.7682453,9.2153904,11z/data=!3m1!4b1!4m5!3m4!1s0x47bae4fad5da7ed1:0x427f28131548490!8m2!3d51.7774678!4d9.3771214" target="blank">
+          <i class="fas fa-map-marker-alt"></i> <br/><span>
+          Some Place 1, quaint Village, NRW, 33093, Germany</span></a></div>
+
+        <div class="contact_2"> <a href="tel:+4919298978979">
+          <i class="fas fa-phone-alt"></i> <br/> <span> 01929 8978979</span></a>
         </div>
-      </span>
 
+        <div class="contact_3"><a href="sms:+14035550185?body=I'm%20interested%20in%20your%20web%20design">
+          <i class="fas fa-sms"></i> <br /> <span>
+          SMS - 01929 90278231 </a></span></div>
 
+        <div class="contact_4"> <a href="https://wa.me/15551234567?text=I'm%20interested%20in%20your%20web%20design" target="blank">
+          <i class="fab fa-whatsapp"></i><br/> <span> WhatsApp - 01929 90278231 </span></a>
+        </div>
+        <div class="contact_5"><a href="mailto:info@snelldesigns.tech" target="blank">
+          <i class="fas fa-envelope-open-text"></i> <br> <span>info@snelldesigns.tech </span> </a>
+        </div>
+      </div>
+      <!-- End of thumbnail backgrounds -->
+      <!-- <div class="test">
+          <div class="icon-container2">
+            <a href=""></a><ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-xing"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
+          </div>
+        </div> -->
+    </main>
 
-<main>
+    <footer class="footer-icon">
+      <div class="icon-container">
+        <a href="https://www.linkedin.com/in/darren-snell/" target="blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+        <a href="https://www.xing.com/profile/Darren_Snell2/cv" target="blank"
+          ><ion-icon name="logo-xing"></ion-icon
+        ></a>
+        <a href="https://github.com/Snell401" target="blank"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+      </div>
+    </footer>
 
-
-
-
-</main>
-
-
-
-    <script>
-        function toggleNav() {
-          document.body.classList.toggle("nav-open");
-        }
   
-        document.querySelector(".btn-nav-open").addEventListener("click", () => {
-          toggleNav();
-        });
-  
-        document.querySelector(".nav-close").addEventListener("click", () => {
-          toggleNav();
-        });
-      </script>
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-      ></script>
-  
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-      ></script>
-    </body>
-  </html>
-  
+  </body>
+  <script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+</html>
