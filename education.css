@@ -132,7 +132,7 @@ nav ul li a {
   transition: all 0.3s ease-out;
   line-height: 1rem;
   text-decoration: none;
-  color: #0f4eb3;
+  color: #0a0a0a;
   display: block;
   padding: 1rem;
   font-size: xx-large;
@@ -189,7 +189,7 @@ nav ul li:hover a i {
   display: block;
   margin: 10px;
   z-index: 100;
-  background: blue;
+  background: rgb(71, 7, 52);
 }
 
 .nav-bar:hover .sub-menu-1 ul li {
