@@ -806,4 +806,8 @@ footer {
   .mission-vision {
     width: inherit;
   }
+
+  .history  {
+    white-space: nowrap;
+  }
 }
