@@ -13,81 +13,100 @@ body {
   background: #010101;
 }
 
-
 // ============ background stars ====================
 
 @keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px; z-index: 1;}
+  from {
+    background-position: 0 0;
   }
-  @-webkit-keyframes move-twink-back {
-    from {background-position:0 0; z-index: 1;}
-    to {background-position:-10000px 5000px; z-index: 1;}
+  to {
+    background-position: -10000px 5000px;
+    z-index: 1;
   }
-  
-  @keyframes move-clouds-back {
-    from {background-position:0 0; z-index: 1;}
-    to {background-position:10000px 0; z-index: 1;}
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+    z-index: 1;
   }
-  @-webkit-keyframes move-clouds-back {
-    from {background-position:0 0;  z-index: 1;}
-    to {background-position:10000px 0; z-index: 1;}
-   
+  to {
+    background-position: -10000px 5000px;
+    z-index: 1;
   }
-  
-  .stars,  .clouds {
-  position:absolute;
-  top:0;
-  left:0px;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
-  z-index: 2;
-  }
+}
 
-  .twinkling {
-    position:absolute;
-    top:0;
-    left:0px;
-    right:0;
-    bottom:0;
-    width:100%;
-    height:100%;
-    display:block;
-    z-index: 1; 
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+    z-index: 1;
   }
-  .stars {
-  background:#000 url(./images/stars.png) repeat top center;
-  z-index:0;
+  to {
+    background-position: 10000px 0;
+    z-index: 1;
   }
-  .twinkling{
-  background:transparent url(./images/twinkling.png) repeat top center;
-  z-index:1;
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
+}
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+    z-index: 1;
   }
-  .clouds{
-    background:transparent url(./images/clouds.png) repeat top center;
-    z-index:3;
-  -moz-animation:move-clouds-back 200s linear infinite;
-  -ms-animation:move-clouds-back 200s linear infinite;
-  -o-animation:move-clouds-back 200s linear infinite;
-  -webkit-animation:move-clouds-back 200s linear infinite;
-  animation:move-clouds-back 200s linear infinite;
+  to {
+    background-position: 10000px 0;
+    z-index: 1;
   }
+}
+
+.stars,
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 2;
+}
+
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+.stars {
+  background: #000 url(./images/stars.png) repeat top center;
+  z-index: 0;
+}
+.twinkling {
+  background: transparent url(./images/twinkling.png) repeat top center;
+  z-index: 1;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+.clouds {
+  background: transparent url(./images/clouds.png) repeat top center;
+  z-index: 3;
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+}
 
 /* ========= links ======= */
 a {
   color: #dddddd;
-
 }
-
-
 
 /* ==== Navbar layout ========== */
 .container {
@@ -104,7 +123,6 @@ a {
 
 .posAbs {
   position: absolute;
-  
 }
 
 label {
@@ -114,7 +132,6 @@ label {
   width: 4rem;
   position: relative;
   z-index: 10;
- 
 
   span {
     border-radius: 15%;
@@ -126,37 +143,32 @@ label {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     transition: all 0.3s ease-out;
-   
+
     &:before {
-        border-radius: 15%;
-        position: absolute;
-        content: "";
-        height: 100%;
-        width: 100%;
-        background-color: white;
-        top: 400%;
-        transition: all 0.3s ease-out;
-        
-      }
-      &:after {
-        border-radius: 15%;
-        position: absolute;
-        content: "";
-        height: 100%;
-        width: 100%;
-        background-color: white;
-        top: -400%;
-        transition: all 0.3s ease-out;
-       
-      }
+      border-radius: 15%;
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      top: 400%;
+      transition: all 0.3s ease-out;
+    }
+    &:after {
+      border-radius: 15%;
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      top: -400%;
+      transition: all 0.3s ease-out;
+    }
   }
-  
-  
 
   &:hover span {
     height: 0;
     transition: all 0.3s ease-out;
-    
   }
   &:hover span:before {
     height: 3px;
@@ -168,10 +180,8 @@ label {
     height: 3px;
     transform: rotate(45deg);
     transition: all 0.3s ease-out;
-    
   }
 }
-
 
 nav {
   max-width: 200px;
@@ -180,79 +190,60 @@ nav {
   transform-origin: top left;
   transition: all 0.3s ease-out;
   z-index: 10;
- 
-  
+
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
-  
-    
+
     li {
-        opacity: 0;
-        transform: translateX(-100%);
-        transition: all 0.6s ease-out;
-        
-       
-        a {
-            transition: all 0.3s ease-out;
-            line-height: 1rem;
-            text-decoration: none;
-            color: #8a8d92;
-            display: block;
-            padding: 1rem;
-            font-size: xx-large;
-            
-            
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: all 0.6s ease-out;
+
+      a {
+        transition: all 0.3s ease-out;
+        line-height: 1rem;
+        text-decoration: none;
+        color: #8a8d92;
+        display: block;
+        padding: 1rem;
+        font-size: xx-large;
       }
+    }
   }
 }
-
-}
-nav ul li:hover a{
-    color: rgb(211, 200, 200);
+nav ul li:hover a {
+  color: rgb(211, 200, 200);
   background-color: #292929;
   transition: all 0.3s ease-out;
 
-  
   i {
     color: rgb(211, 200, 200);
-
   }
 }
-
 
 .navBtn:checked ~ nav {
   transform: translateX(0);
   transition: all 0.3s ease-out;
- 
-  
+
   ul li {
     opacity: 1;
     transform: translateX(0);
     transition: all 0.6s ease-out;
-    
   }
 }
 
-
-
 .navBtn {
   display: none;
-
 }
 
 .sub-menu-1 {
   display: none;
- 
-    
 }
-
-
 
 .nav-bar:nth-child(2) {
   position: relative;
-  
 }
 
 .nav-bar:hover .sub-menu-1 {
@@ -262,32 +253,30 @@ nav ul li:hover a{
   top: -10px;
   left: 190px;
   z-index: 100;
-  
+
   ul {
     display: block;
     margin: 10px;
     z-index: 100;
     background: transparent;
     li {
-        width: 100%;
-        
-     a {
-         background-color: transparent;
-     }
-        /* padding: 10px 0; */
+      width: 100%;
+
+      a {
+        background-color: transparent;
       }
+      /* padding: 10px 0; */
+    }
   }
 }
 
 .sub-menu-1 ul li:hover > a {
   color: whitesmoke;
-text-transform: uppercase;
- 
+  text-transform: uppercase;
 }
 
 .fas {
   margin-right: 10px;
-  
 }
 
 // ============== Logo Snell layout ===============
@@ -303,7 +292,7 @@ text-transform: uppercase;
 
 // ==========thumbnails layout ================
 .container2 {
-  width: 60%;
+  width: 80%;
   display: grid;
   grid-template-areas: "one two three four";
   position: absolute;
@@ -313,7 +302,7 @@ text-transform: uppercase;
   border: none;
   z-index: 100;
 
-   div {
+  div {
     width: 20vw;
     height: 20vh;
     text-align: center;
@@ -322,17 +311,15 @@ text-transform: uppercase;
   }
 }
 
-
-
 .thumbnail1 {
   grid-area: "one";
   font-size: 3rem;
+  line-break: auto;
   span {
     color: rgb(146, 107, 7);
     font-weight: bold;
   }
 }
-
 
 .thumbnail2 {
   grid-area: "two";
@@ -343,7 +330,6 @@ text-transform: uppercase;
   }
 }
 
-
 .thumbnail3 {
   grid-area: "three";
   font-size: 3rem;
@@ -352,7 +338,6 @@ text-transform: uppercase;
     font-weight: bold;
   }
 }
-
 
 .thumbnail4 {
   grid-area: "four";
@@ -378,105 +363,226 @@ footer {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+  bottom: 0;
   ion-icon {
     font-size: 2rem;
     margin: 1rem 0.5rem;
     color: #dddddd81;
   }
-  
 }
-
 
 // =============== contact html css ==================
 
-
 .container_2 {
-    width: 90%;
-    display: grid;
-    grid-template-areas: "one two three four five";
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    margin: 0;
-    border: none;
-    z-index: 100;
-     
-    
-  
-     div {
-      width: 15vw;
-      height: 20vh;
-      text-align: center;
-      justify-content: center;
-      font-size: 2rem;
-     
+  width: 90%;
+  display: grid;
+  grid-template-areas: "one two three four five";
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  margin: 0;
+  border: none;
+  z-index: 100;
 
-      .fas,
-      .fab {
-          font-size: 3rem;
+  div {
+    width: 15vw;
+    height: 20vh;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+
+    .fas,
+    .fab {
+      font-size: 3rem;
+    }
+
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: rgba(235, 233, 228, 0.705);
       }
+    }
+    span {
+      color: rgba(235, 233, 228, 0.705);
+      font-weight: bold;
+    }
+  }
+}
 
-      a {
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-            color: rgba(235, 233, 228, 0.705);
+.contact_1 {
+  grid-area: "one";
+  font-size: 1.3rem;
+
+  .fas {
+    color: rgb(146, 107, 7);
+  }
+}
+
+.contact_2 {
+  grid-area: "two";
+  font-size: 1.3rem;
+
+  .fas {
+    color: rgba(179, 2, 2, 0.699);
+  }
+}
+
+.contact_3 {
+  grid-area: "three";
+  font-size: 1.3rem;
+
+  .fas {
+    color: rgb(3, 82, 131);
+  }
+}
+
+.contact_4 {
+  grid-area: "four";
+  font-size: 1.3rem;
+
+  .fab {
+    color: rgb(78, 126, 6);
+  }
+}
+
+.contact_5 {
+  grid-area: "five";
+  font-size: 1.3rem;
+  text-align: center;
+
+  .fas {
+    color: rgba(244, 165, 96, 0.459);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body {
+      width: 100vw;
+  }
+  
+  .logo-Snell {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: -20%;
+  }
+    .container_2 {
+    width: 90%;
+    justify-content: center;
+    display: grid;
+grid-template-columns: 500px;
+    grid-template-rows: 25rem repeat(4, 12rem);
+    gap: 10px;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five";
+    .contact_1 {
+      grid-area: one;
+      justify-self: center;
+      white-space: inherit;
+    }
+
+    .contact_2 {
+      grid-area: two;
+      text-align: center;
+      justify-self: center;
+    }
+
+    .contact_3 {
+      grid-area: three;
+      justify-self: center;
+      text-align: center;
+      
+    }
+    .contact_4 {
+      grid-area: four;
+      justify-self: center;
+      text-align: center;
+    }
+    .contact_5 {
+      grid-area: five;
+      text-align:center;
+      justify-self: center;
+      
+    }
+     }
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+
+    .icon-container {
+        position: relative;
+        bottom: -48rem;
+    }
+
+    .icon-container1 {
+        position: relative;
+        bottom: -20rem;
+    }
+}
+
+nav ul li a {
+    line-height: 1.2rem;
+    font-size: 1.5rem;
+    padding: 5PX;
+    max-width: 140PX;
+}
+
+
+.container2 {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (4, 200px);
+    grid-template-areas: 
+    "thumb1"
+    "thumb2"
+    "thumb3"
+    "thumb4";
+
+    .thumbnail1 {
+        grid-area: thumb1;
+        justify-self:center;
+        white-space: nowrap;
+        
+      }
+      
+      .thumbnail2 {
+        grid-area: thumb2;
+        justify-self:center;
+        white-space: nowrap;
+        
+        
         }
       }
-      span {
-        color: rgba(235, 233, 228, 0.705);
-        font-weight: bold;
+      
+      .thumbnail3 {
+        grid-area: thumb3;
+        justify-self:center;
+        white-space: nowrap;
       }
-    }
-  }
-   
-  
-  .contact_1 {
-    grid-area: "one";
-    font-size: 1.3rem;
-    
-    .fas {
-        color:rgb(146, 107, 7);
-    }
-  }
-  
-  
-  .contact_2 {
-    grid-area: "two";
-    font-size: 1.3rem;
-    
-    .fas {
-        color: rgba(179, 2, 2, 0.699);
-    }
-  }
-  
-  
-  .contact_3 {
-    grid-area: "three";
-    font-size: 1.3rem;
-    
-    .fas {
-        color: rgb(3, 82, 131);
-    }
-  }
-  
-  
-  .contact_4 {
-    grid-area: "four";
-    font-size: 1.3rem;
-   
-    .fab {
-        color: rgb(78, 126, 6);
-    }
-  }
+      
+      .thumbnail4 {
+        grid-area: thumb4;
+        justify-self:center;
+        white-space: nowrap;
+        }
 
-  .contact_5 {
-    grid-area: "five";
-    font-size: 1.3rem;
-   
-    .fas {
-        color: rgba(244, 165, 96, 0.459);
-    }
-  }
+        .background-container {
 
-  
+            .clouds,
+            .stars,
+            .twinkling {
+            height: 100%;
+            background-size: cover;
+            background-repeat: repeat;
+            overflow: visible;
+        }
+        }
+}

@@ -55,7 +55,8 @@ body {
   }
 }
 
-.stars, .clouds {
+.stars,
+.clouds {
   position: absolute;
   top: 0;
   left: 0px;
@@ -308,7 +309,7 @@ nav ul li:hover a i {
 }
 
 .container2 {
-  width: 60%;
+  width: 80%;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "one two three four";
@@ -333,6 +334,7 @@ nav ul li:hover a i {
 .thumbnail1 {
   grid-area: "one";
   font-size: 3rem;
+  line-break: auto;
 }
 
 .thumbnail1 span {
@@ -385,6 +387,7 @@ footer {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  bottom: 0;
 }
 
 .footer-icon ion-icon {
@@ -474,9 +477,146 @@ footer {
 .contact_5 {
   grid-area: "five";
   font-size: 1.3rem;
+  text-align: center;
 }
 
 .contact_5 .fas {
   color: rgba(244, 165, 96, 0.459);
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    width: 100vw;
+  }
+  .logo-Snell {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    bottom: -20%;
+  }
+  .container_2 {
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 500px;
+        grid-template-columns: 500px;
+    -ms-grid-rows: 25rem (12rem)[4];
+        grid-template-rows: 25rem repeat(4, 12rem);
+    gap: 10px;
+        grid-template-areas: "one" "two" "three" "four" "five";
+  }
+  .container_2 .contact_1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: one;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    white-space: inherit;
+  }
+  .container_2 .contact_2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: two;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .container_2 .contact_3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: three;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+  }
+  .container_2 .contact_4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: four;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+  }
+  .container_2 .contact_5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: five;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+  }
+  footer .icon-container {
+    position: relative;
+    bottom: -48rem;
+  }
+  footer .icon-container1 {
+    position: relative;
+    bottom: -20rem;
+  }
+  nav ul li a {
+    line-height: 1.2rem;
+    font-size: 1.5rem;
+    padding: 5PX;
+    max-width: 140PX;
+  }
+  .container2 {
+    display: -ms-grid;
+    display: grid;
+    width: 80%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: repeat 4, 200px;
+        grid-template-rows: repeat 4, 200px;
+        grid-template-areas: "thumb1" "thumb2" "thumb3" "thumb4";
+  }
+  .container2 .thumbnail1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: thumb1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    white-space: nowrap;
+  }
+  .container2 .thumbnail2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: thumb2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    white-space: nowrap;
+  }
+  .thumbnail3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: thumb3;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    white-space: nowrap;
+  }
+  .thumbnail4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: thumb4;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    white-space: nowrap;
+  }
+  .background-container .clouds,
+  .background-container .stars,
+  .background-container .twinkling {
+    height: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    overflow: visible;
+  }
 }
 /*# sourceMappingURL=main.css.map */
