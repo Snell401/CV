@@ -504,8 +504,8 @@ footer {
     display: grid;
     -ms-grid-columns: 500px;
         grid-template-columns: 500px;
-    -ms-grid-rows: 25rem (12rem)[4];
-        grid-template-rows: 25rem repeat(4, 12rem);
+    -ms-grid-rows: 25rem (15rem)[4];
+        grid-template-rows: 25rem repeat(4, 15rem);
     gap: 10px;
         grid-template-areas: "one" "two" "three" "four" "five";
   }
@@ -556,7 +556,7 @@ footer {
   }
   footer .icon-container {
     position: relative;
-    bottom: -48rem;
+    bottom: -60rem;
   }
   footer .icon-container1 {
     position: relative;

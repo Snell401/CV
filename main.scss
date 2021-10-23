@@ -472,7 +472,7 @@ footer {
     justify-content: center;
     display: grid;
 grid-template-columns: 500px;
-    grid-template-rows: 25rem repeat(4, 12rem);
+    grid-template-rows: 25rem repeat(4, 15rem);
     gap: 10px;
     grid-template-areas:
       "one"
@@ -518,7 +518,7 @@ footer {
 
     .icon-container {
         position: relative;
-        bottom: -48rem;
+        bottom: -60rem;
     }
 
     .icon-container1 {
