@@ -256,14 +256,13 @@ nav ul li:hover a i {
 }
 
 .download {
-
   cursor: pointer;
   margin-top: 40px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   position: relative;
   bottom: 20%;
- left: 100%;
+  left: 100%;
 }
 
 .download-button .fas {
@@ -294,9 +293,6 @@ a:active {
   margin: 10px 0;
 }
 
-
-
-
 /* ========= Employment box ====================== */
 main .employment {
   position: relative;
@@ -306,7 +302,7 @@ main .employment {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 11rem 20rem 20rem repeat(7, 1fr); 
+  grid-template-columns: 11rem 20rem 20rem repeat(7, 1fr);
   grid-template-rows: repeat(10px 150px 150px 150px 150px);
   gap: 10px 10px;
   grid-template-areas:
@@ -397,7 +393,7 @@ main .employment {
 }
 .edu7 {
   grid-area: edu7;
- align-self: start;
+  align-self: start;
 }
 
 .edu8 {
@@ -407,11 +403,11 @@ main .employment {
 .self {
   grid-area: self;
   justify-content: flex-start;
-} 
+}
 
 /* ============ Biobox ============== */
 
-.bio  {
+.bio {
   font-size: 2rem;
   width: 90%;
   position: relative;
@@ -450,8 +446,8 @@ article .mission-container {
   grid-template:
     "para1 para3"
     "para2 para3";
-    font-size: 1.4rem;
-    text-align: justify;
+  font-size: 1.4rem;
+  text-align: justify;
 }
 
 .mission-para1 {
@@ -474,54 +470,43 @@ article .mission-container {
   margin-right: 10px;
 }
 
-
-
-
 /* ============= Newsletter section =============== */
-
-
-
-
 
 .newsletter {
   padding: 10px;
-  }
+}
 
-
-input[type=text], input[type=submit] {
+input[type="text"],
+input[type="submit"] {
   width: 80%;
   padding: 12px;
   margin: 8px 0;
-   border: 1px solid #ccc;
-  
+  border: 1px solid #ccc;
 }
 
-
-input[type=checkbox] {
+input[type="checkbox"] {
   margin-top: 5px;
 }
 
-
-input[type=submit] {
-  background-color: #04AA6D;
+input[type="submit"] {
+  background-color: #04aa6d;
   color: white;
   border: none;
-  
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   opacity: 0.8;
 }
 
 .email-placeholder p {
   width: 100%;
-  margin-top: -4.5rem ;
-  font-size: .7em;
-  text-align: left ;
+  margin-top: -4.5rem;
+  font-size: 0.7em;
+  text-align: left;
 }
 /* ============= grid for newsletter ========== */
 
-.contact-grid{
+.contact-grid {
   width: 90vw;
   position: relative;
   left: 5%;
@@ -529,26 +514,24 @@ input[type=submit]:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   font-size: 1.4rem;
-  grid-template-areas: 
-  "one two three";
-  
+  grid-template-areas: "one two three";
 }
 
 .contact-grid li {
   list-style-type: none;
   padding: 10px;
 }
-.contact  {
-grid-area: one;
-margin-top: 20px;
+.contact {
+  grid-area: one;
+  margin-top: 20px;
 }
 
 .connect {
   grid-area: three;
-   margin-top: 5rem;
+  margin-top: 5rem;
 }
 
-.contact li a{
+.contact li a {
   color: #110f0f;
 }
 
@@ -557,7 +540,6 @@ margin-top: 20px;
 }
 .newsletter-container {
   grid-area: two;
- 
 }
 
 .social {
@@ -565,7 +547,6 @@ margin-top: 20px;
   width: 100%;
   font-size: x-large;
   align-self: center;
-
 }
 .social a,
 .contact a {
@@ -575,7 +556,6 @@ margin-top: 20px;
 .contact a:hover {
   text-decoration: underline;
 }
-
 
 .social .fab {
   width: 100%;
@@ -589,15 +569,11 @@ margin-top: 20px;
   background-color: transparent;
   border: none;
   scroll-behavior: smooth;
-  
 }
-
 
 #myBtn .fas {
   font-size: 4rem;
   color: orange;
-
-  
 }
 
 footer {
@@ -615,15 +591,13 @@ footer {
 @media screen and (max-width: 1500px) {
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(6, 10rem); 
+    grid-template-columns: repeat(6, 10rem);
     grid-template-rows: repeat(5, 50px 5, 100px);
     gap: 10px 10px;
-        
   }
 
   .rank {
-   width: 100%;
-  
+    width: 100%;
   }
   .rank img {
     width: 60px;
@@ -637,7 +611,7 @@ footer {
   .rank2 {
     grid-area: 9/2/9/3;
   }
-  
+
   .rank3 {
     grid-area: 9/3/9/4;
   }
@@ -654,75 +628,74 @@ footer {
     grid-area: 7/1/7/2;
     font-size: 2rem;
   }
-  
+
   .history {
     grid-area: 8/1/8/3;
   }
-  
+
   .history h2 {
     padding: 0;
     margin: 10px 0;
   }
-  
+
   .history li {
     list-style-type: none;
     font-weight: 500;
     font-size: 1.2em;
   }
-  
+
   .edu-title {
     grid-area: eduTitle;
     font: 2rem;
   }
-  
+
   .edu-title h1 {
     font-size: 3rem;
   }
-  
+
   .edu1 {
     grid-area: edu1;
   }
-  
+
   .edu2 {
     grid-area: edu2;
   }
   .edu3 {
     grid-area: edu3;
   }
-  
+
   .edu4 {
     grid-area: edu4;
   }
   .edu5 {
     grid-area: edu5;
   }
-  
+
   .edu6 {
     grid-area: edu6;
   }
   .edu7 {
     grid-area: edu7;
-   align-self: start;
+    align-self: start;
   }
-  
+
   .edu8 {
     grid-area: edu8;
   }
-  
+
   .self {
     grid-area: self;
     justify-content: flex-start;
-  } 
+  }
 }
 
-@media screen and (max-width:1000px) {
-
-  .rank{
+@media screen and (max-width: 1000px) {
+  .rank {
     display: none;
   }
 
   .self {
-    transform: scale(.5);
+    transform: scale(0.5);
     position: absolute;
     top: -10%;
   }
@@ -732,23 +705,52 @@ footer {
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
+  nav {
+    max-width: 140px;
+    position: fixed;
+    left: 10%;
+    top: 0%;
+  }
+
+  nav ul li a {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+
+  main hr:first-child {
+    display: none;
+  }
+
+  .top-container {
+    white-space: inherit;
+  }
+
+  main {
+    width: 100vw;
+    position: relative;
+  }
+
+  .employment {
+    white-space: wrap;
+  }
+
   .self {
     display: none;
   }
-.history {
-  grid-area: 8/1/8/4;
-}
+  .history {
+    grid-area: 8/1/8/4;
+  }
   .edu-title {
-    grid-area:1/1/2/2 ;
+    grid-area: 1/1/2/2;
   }
 
   .edu2 {
-    grid-area:2/1/2/2;
+    grid-area: 2/1/2/2;
   }
 
   .edu1 {
-    grid-area:2/2/2/3;
+    grid-area: 2/2/2/3;
   }
 
   .edu3 {
@@ -773,5 +775,35 @@ footer {
 
   .edu8 {
     grid-area: 5/2/5/3;
+  }
+
+  .connect {
+    margin-top: 0;
+  }
+  .connect hr{ 
+    display: none;
+
+  }
+
+  .connect ul {
+    display: inline;
+   align-items: start;
+  
+  }
+
+  .connect ul li {
+    text-align: center;
+  }
+
+  .contact {
+    white-space: inherit;
+  }
+
+  .mission {
+    white-space: inherit;
+  }
+
+  .mission-vision {
+    width: inherit;
   }
 }
