@@ -6,18 +6,21 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  
 }
 
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
 body {
   font-size: 150%;
   font-family: 'Pathway Gothic One', sans-serif;
-  background: #cfcdcd;
+  background: #8e99a2b7;
+  
 }
+
+
 
 /* ========= links ======= */
 a {
@@ -47,7 +50,7 @@ label span {
   border-radius: 15%;
   height: 3px;
   width: 32px;
-  background-color: #3f3f3f;
+  background-color: #cfcdcd;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -63,7 +66,7 @@ label span:before {
   content: "";
   height: 100%;
   width: 100%;
-  background-color: #3f3f3f;
+  background-color: #cfcdcd;
   top: 400%;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -75,7 +78,7 @@ label span:after {
   content: "";
   height: 100%;
   width: 100%;
-  background-color: #3f3f3f;
+  background-color: #cfcdcd;
   top: -400%;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -134,7 +137,7 @@ nav ul li a {
   transition: all 0.3s ease-out;
   line-height: 1rem;
   text-decoration: none;
-  color: #3f3f3f;
+  color: #d1d6dd;
   display: block;
   padding: 1rem;
   font-size: xx-large;
@@ -191,7 +194,7 @@ nav ul li:hover a i {
   display: block;
   margin: 10px;
   z-index: 100;
-  background: #cdcdd6;
+  background: rgb(205, 205, 214);
 }
 
 .nav-bar:hover .sub-menu-1 ul li {
@@ -205,6 +208,7 @@ nav ul li:hover a i {
 
 .sub-menu-1 ul li:hover > a {
   color: #d3c8c8;
+ 
   text-transform: uppercase;
 }
 
@@ -212,38 +216,218 @@ nav ul li:hover a i {
   margin-right: 10px;
 }
 
+/* =========== MAIN ============= */
+
+/* =========== Hero =============== */
+
+main {
+    position:  absolute;
+    width: 100vw;
+    top: 0;
+  
+}
+
+.hero   {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:#000 url(./images/stars.png) repeat top center;
+    
+}
+
+.hero img {
+    width: 20%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+}
+h1, h2{
+    font-style: italic;
+    color: #cfcdcd;
+    text-align: center;
+    color: rgba(255,255,255,.3);
+text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+
+.alert
+ {
+  z-index: 10;
+  width: 100vw;
+}
+
+.alert img:first-child {
+ padding: 0;
+ margin: 0;
+
+}
+
+
+.accordion-button {
+    color: #f5f6f7;
+    background: #8e99a2b7;
+    font: 600;
+    font-size: 1em;
+}
+
+.collapse img {
+    margin: 10px;
+}
+
 .alert {
-  text-align: center;
-  font-size: 4rem;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0;
+    background: #8E99A2;
+    color: #f5f6f7;
+    padding: 0;
+    
 }
 
-.card {
-  position: relative;
-  background-color: #CFCDCD;
+.collapse {
+    width: 98%;
+       
+}
+
+/* =========== star wars =========== */
+.fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+  }
+   
+  .star-wars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 700px;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    text-align: justify;
+    overflow: hidden;
+    
+  }
+
+  .star-wars i {
+    position: absolute;
+    top: 500px;
+    opacity: .1;
+  }
+  
+  .crawl {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 40s linear;
+  }
+  
+  .crawl > .title {
+    font-size: 90%;
+    text-align: center;
+  }
+  
+  .crawl > .title h1 {
+    margin: 0 0 100px 0;
+    text-transform: uppercase;
+  }
+  
+  @keyframes crawl {
+    0% {
+      top: 0;
+      transform: rotateX(20deg)  translateZ(0);
+    }
+    100% { 
+      top: -6000px;
+      transform: rotateX(25deg) translateZ(-2500px);
+    }
+  }
+ 
+/* ============ Form ============= */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical ;
+}
+
+input[type=submit] {
+  background-color: #feda4a;
+  color: rgb(22, 22, 22);
+  padding: 12px 20px;
   border: none;
-}
-
-.card img {
-  width: 500px;
-  height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-}
-
-.card .card-title {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.card .card-title a {
-  text-decoration: none;
-  color: black;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.card .card-title a:hover {
-  font-size: 3rem;
+
+input[type=submit]:hover {
+  background-color: #926722;
 }
-/*# sourceMappingURL=portfolio.css.map */
+
+
+.container3 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.container3 h2 {
+  color: #000;
+  font-size: 4rem;
+}
+
+.container3 label {
+  width: 100%;
+  height: 2rem;
+  margin: 0;
+ 
+}
+
+
+/* ========== Scroll up ========== */
+
+/* #myBtn {
+  position: sticky;
+  top: -2px;
+  left: 98%;
+  background-color: transparent;
+  border: none;
+  scroll-behavior: smooth;
+}
+
+#myBtn .fas {
+  font-size: 4rem;
+  color: orange;
+} */
+/* ============ footer =========== */
+
+
+footer {
+  width: 100%;
+  background-color: rgb(24, 20, 77);
+  height: 7rem;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  white-space: inherit;
+}
+
+/* ========== Media ============ */
+@media screen and (max-width:750px) {
+  .alert img:first-child {
+    transform: scale(.6);
+  }
+ 
+}

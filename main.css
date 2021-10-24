@@ -10,6 +10,7 @@ body {
   font-size: 100%;
   font-family: "Darker Grotesque", sans-serif;
   background: #010101;
+  overflow-x: hidden;
 }
 
 @keyframes move-twink-back {
@@ -331,6 +332,31 @@ nav ul li:hover a i {
   color: rgba(208, 209, 211, 0.972);
 }
 
+.container2 div a {
+  color: #737373;
+  text-decoration: none;
+}
+
+.container2 .thumbnail1 a:hover {
+  color: #926b07;
+  font-size: 3.5rem;
+}
+
+.container2 .thumbnail2 a:hover {
+  color: #4e7e06;
+  font-size: 3.5rem;
+}
+
+.container2 .thumbnail3 a:hover {
+  color: #035283;
+  font-size: 3.5rem;
+}
+
+.container2 .thumbnail4 a:hover {
+  color: rgba(179, 2, 2, 0.699);
+  font-size: 3.5rem;
+}
+
 .thumbnail1 {
   grid-area: "one";
   font-size: 3rem;
@@ -394,6 +420,12 @@ footer {
   font-size: 2rem;
   margin: 1rem 0.5rem;
   color: #dddddd81;
+}
+
+.footer-icon ion-icon:hover {
+  color: #ffff33;
+  -webkit-box-shadow: 0px 0px 2px 4px #ffff00;
+          box-shadow: 0px 0px 2px 4px #ffff00;
 }
 
 .container_2 {
@@ -549,14 +581,9 @@ footer {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  footer {
-    position: relative;
-    width: 100%;
-    height: 10vh;
-  }
   footer .icon-container {
     position: relative;
-    bottom: -60rem;
+    bottom: -64rem;
   }
   footer .icon-container1 {
     position: relative;
@@ -565,8 +592,8 @@ footer {
   nav ul li a {
     line-height: 1.2rem;
     font-size: 1.5rem;
-    padding: 5PX;
-    max-width: 140PX;
+    padding: 5px;
+    max-width: 140px;
   }
   .container2 {
     display: -ms-grid;

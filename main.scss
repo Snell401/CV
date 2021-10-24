@@ -11,6 +11,7 @@ body {
   font-size: 100%;
   font-family: "Darker Grotesque", sans-serif;
   background: #010101;
+  overflow-x: hidden;
 }
 
 // ============ background stars ====================
@@ -308,6 +309,33 @@ nav ul li:hover a {
     text-align: center;
     justify-content: center;
     color: rgba(208, 209, 211, 0.972);
+
+    a {
+      color: #737373;
+      text-decoration: none;
+    }
+  }
+}
+
+.container2 {
+  .thumbnail1 a:hover {
+    color: rgb(146, 107, 7);
+    font-size: 3.5rem;
+  }
+
+  .thumbnail2 a:hover {
+    color: rgb(78, 126, 6);
+    font-size: 3.5rem;
+  }
+
+  .thumbnail3 a:hover {
+    color: rgb(3, 82, 131);
+    font-size: 3.5rem;
+  }
+
+  .thumbnail4 a:hover {
+    color: rgba(179, 2, 2, 0.699);
+    font-size: 3.5rem;
   }
 }
 
@@ -315,6 +343,7 @@ nav ul li:hover a {
   grid-area: "one";
   font-size: 3rem;
   line-break: auto;
+
   span {
     color: rgb(146, 107, 7);
     font-weight: bold;
@@ -368,6 +397,11 @@ footer {
     font-size: 2rem;
     margin: 1rem 0.5rem;
     color: #dddddd81;
+
+    &:hover {
+      color: #ffff33;
+      box-shadow: 0px 0px 2px 4px #ffff00;
+    }
   }
 }
 
@@ -458,20 +492,20 @@ footer {
 
 @media screen and (max-width: 850px) {
   body {
-      width: 100vw;
+    width: 100vw;
   }
-  
+
   .logo-Snell {
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%);
-      bottom: -20%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -20%;
   }
-    .container_2 {
+  .container_2 {
     width: 90%;
     justify-content: center;
     display: grid;
-grid-template-columns: 500px;
+    grid-template-columns: 500px;
     grid-template-rows: 25rem repeat(4, 15rem);
     gap: 10px;
     grid-template-areas:
@@ -496,7 +530,6 @@ grid-template-columns: 500px;
       grid-area: three;
       justify-self: center;
       text-align: center;
-      
     }
     .contact_4 {
       grid-area: four;
@@ -505,84 +538,78 @@ grid-template-columns: 500px;
     }
     .contact_5 {
       grid-area: five;
-      text-align:center;
+      text-align: center;
       justify-self: center;
-      
     }
-     }
+  }
 
-footer {
-    position: relative;
-    width: 100%;
-    height: 10vh;
+  footer {
+    // position: relative;
+    // width: 100%;
+    // height: 10vh;
 
     .icon-container {
-        position: relative;
-        bottom: -60rem;
+      position: relative;
+      bottom: -64rem;
     }
 
     .icon-container1 {
-        position: relative;
-        bottom: -20rem;
+      position: relative;
+      bottom: -20rem;
     }
-}
+  }
 
-nav ul li a {
+  nav ul li a {
     line-height: 1.2rem;
     font-size: 1.5rem;
-    padding: 5PX;
-    max-width: 140PX;
-}
+    padding: 5px;
+    max-width: 140px;
+  }
 
-
-.container2 {
+  .container2 {
     display: grid;
     width: 80%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat (4, 200px);
-    grid-template-areas: 
-    "thumb1"
-    "thumb2"
-    "thumb3"
-    "thumb4";
+    grid-template-areas:
+      "thumb1"
+      "thumb2"
+      "thumb3"
+      "thumb4";
 
     .thumbnail1 {
-        grid-area: thumb1;
-        justify-self:center;
-        white-space: nowrap;
-        
-      }
-      
-      .thumbnail2 {
-        grid-area: thumb2;
-        justify-self:center;
-        white-space: nowrap;
-        
-        
-        }
-      }
-      
-      .thumbnail3 {
-        grid-area: thumb3;
-        justify-self:center;
-        white-space: nowrap;
-      }
-      
-      .thumbnail4 {
-        grid-area: thumb4;
-        justify-self:center;
-        white-space: nowrap;
-        }
+      grid-area: thumb1;
+      justify-self: center;
+      white-space: nowrap;
+    }
 
-        .background-container {
+    .thumbnail2 {
+      grid-area: thumb2;
+      justify-self: center;
+      white-space: nowrap;
+    }
+  }
 
-            .clouds,
-            .stars,
-            .twinkling {
-            height: 100%;
-            background-size: cover;
-            background-repeat: repeat;
-            overflow: visible;
-        }
-        }
+  .thumbnail3 {
+    grid-area: thumb3;
+    justify-self: center;
+    white-space: nowrap;
+  }
+
+  .thumbnail4 {
+    grid-area: thumb4;
+    justify-self: center;
+    white-space: nowrap;
+  }
+
+  .background-container {
+    .clouds,
+    .stars,
+    .twinkling {
+      height: 100%;
+      background-size: cover;
+      background-repeat: repeat;
+      overflow: visible;
+    }
+  }
 }
