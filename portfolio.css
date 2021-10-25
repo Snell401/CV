@@ -19,6 +19,10 @@ body {
   background: #cfcdcd;
 }
 
+main {
+  position: relative;
+}
+
 /* ========= links ======= */
 a {
   color: #dddddd;
@@ -314,7 +318,8 @@ input[type=submit]:hover {
 }
 
 /* ========== Scroll up ========== */
-/* #myBtn {
+#myBtn {
+  position: -webkit-sticky;
   position: sticky;
   top: -2px;
   left: 98%;
@@ -326,7 +331,8 @@ input[type=submit]:hover {
 #myBtn .fas {
   font-size: 4rem;
   color: orange;
-} */
+}
+
 /* ============ footer =========== */
 footer {
   width: 100vw;

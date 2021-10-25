@@ -16,6 +16,11 @@ body {
   font-size: 150%;
   font-family: "Pathway Gothic One", sans-serif;
   background: #cfcdcd;
+ 
+}
+
+main {
+  position: relative;
 }
 
 /* ========= links ======= */
@@ -311,8 +316,8 @@ input[type=submit]:hover {
 }
 /* ========== Scroll up ========== */
 
-/* #myBtn {
-  position: sticky;
+ #myBtn {
+ position: sticky;
   top: -2px;
   left: 98%;
   background-color: transparent;
@@ -323,7 +328,7 @@ input[type=submit]:hover {
 #myBtn .fas {
   font-size: 4rem;
   color: orange;
-} */
+} 
 /* ============ footer =========== */
 
 
